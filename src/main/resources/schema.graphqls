@@ -1,0 +1,13 @@
+type Query {
+    byName(name: String): User!
+}
+
+type Mutation {
+    updateBalance(name: String, balance: Float): User!
+}
+
+type User {
+    id: Int
+    name: String
+    balance: Float
+}
